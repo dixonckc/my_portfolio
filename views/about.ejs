@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <!-- Include navigation bar using EJS partial -->
+  <%- include('partials/_navbar') %>
+
+  <main>
+    <!-- About Me content -->
+    <section class="about-content">
+      <div class="centered">
+        <img src="/images/id_photo.jpg" alt="Chun Kin Chan, Dixon">
+        <h2>Hi, I'm Chun Kin Chan, Dixon.</h2>
+      </div>
+      <p>Software engineering student passionate about coding and continuous learning in C#, JavaScript, SQL, and more.</p>
+      <p>Committed to growth through challenges and victories in every coding project.</p>
+      <p><a href="/contact">Contact me</a> or feel free to download my resume by clicking on the link below.</p>
+      <p>View my resume: <a href="/images/resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+    </section>
+  </main>
+
+  <!-- Include footer using EJS partial -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

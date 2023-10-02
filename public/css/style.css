@@ -1,0 +1,251 @@
+/* File: app.js
+   Student: Chun Kin CHAN, Dixon
+   Student ID: 301291863
+   Date: 30 Sept, 2023
+*/
+
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    color: #000;
+  }
+  
+  body {
+    background-color: #f8f8f8; 
+    font-size: 18px;
+    line-height: 1.5; 
+    margin: 20px; 
+    padding: 20px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent; /* Add an underline effect */
+  }
+  
+  nav a:hover {
+    color: #f1f1f1;
+    border-bottom: 2px solid #f1f1f1; /* Highlight the underline on hover */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White content background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  section {
+    margin: 30px 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  /* Logo styles */
+  .logo {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .logo img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .logo img:hover {
+    transform: rotate(10deg) scale(1.1); /* Add a rotation effect */
+  }
+  
+  /* Individual page specific styles */
+  .welcome-message {
+    text-align: center;
+    color: #007bff; /* Blue text color */
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+/* Mission Statement styles */
+.mission-statement {
+    text-align: justify;
+    line-height: 1.5; 
+  }
+  
+  .mission-statement h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .mission-statement p {
+    margin-bottom: 20px;
+  }
+  
+  .mission-statement p:first-child {
+    font-weight: bold;
+  }
+  
+  .mission-statement p a {
+    color: #007bff; /
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .mission-statement {
+      text-align: left; 
+    }
+  }  
+  
+  .about-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Adjust the image size in the about page */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%; /* Circular image shape */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Center the first paragraph and image */
+  .about-content .centered {
+    text-align: center;
+  }
+  
+  /* Left-align the remaining paragraphs */
+  .about-content p:not(.centered) {
+    text-align: left;
+  }
+  
+  .project, .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .project img, .service img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  }
+
+  .contact-form {
+    text-align: left; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #1F2128;
+}

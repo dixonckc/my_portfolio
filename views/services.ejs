@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Services</h1>
+  </header>
+
+  <!-- Include navigation bar -->
+  <%- include('partials/_navbar') %>
+
+  <main>
+    <!-- Service section 1 -->
+    <section class="service">
+      <img src="/images/service1.jpg" alt="Service 1">
+      <h2>Web Development</h2>
+      <p>My web development services cover the entire spectrum, from front-end design to back-end development. I create responsive and user-friendly websites tailored to your specific needs and goals.</p>
+    </section>
+
+    <section class="service">
+      <!-- Service section 2 -->
+      <img src="/images/service2.jpg" alt="Service 2">
+      <h2>Mobile App Development</h2>
+      <p>My mobile app development specializes in creating feature-rich, cross-platform mobile applications. I turn your app ideas into reality, ensuring a seamless user experience across devices.</p>
+    </section>
+
+    <section class="service">
+      <!-- Service section 3 -->
+      <img src="/images/service3.jpg" alt="Service 3">
+      <h2>Database Solutions</h2>
+      <p>I offer database design and optimization services to ensure your data is managed efficiently. My solutions improve data retrieval, storage, and overall system performance.</p>
+    </section>
+  </main>
+
+  <!-- Include footer -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

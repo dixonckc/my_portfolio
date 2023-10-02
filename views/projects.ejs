@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+  </header>
+
+  <!-- Include navigation bar using EJS partial -->
+  <%- include('partials/_navbar') %>
+
+  <main>
+    <!-- Project section 1 -->
+    <section class="project">
+      <img src="/images/project1.jpg" alt="Project 1">
+      <h2>Project 1</h2>
+      <p>Interior design website collaboration with interactive features and user-friendly design.</p>
+    </section>
+
+    <!-- Project section 2 -->
+    <section class="project">
+      <img src="/images/project2.jpg" alt="Project 2">
+      <h2>Project 2</h2>
+      <p>Website creation for showcasing Nike running shoes, emphasizing product features and benefits.</p>
+    </section>
+
+    <!-- Project section 3 -->
+    <section class="project">
+      <img src="/images/project3.jpg" alt="Project 3">
+      <h2>Project 3</h2>
+      <p>Development of a real estate agent website as a portfolio piece to demonstrate web development skills.</p>
+    </section>
+  </main>
+
+  <!-- Include footer using EJS partial -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
